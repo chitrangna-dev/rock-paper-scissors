@@ -79,7 +79,9 @@ The game is deployed on Netlify and connected to GitHub for streamlined deployme
 rock-paper-scissors/
 ├── index.html
 ├── style.css
-└── script.js
+├── script.js
+└── assets/
+    └── preview.PNG
 ```
 
 ---
