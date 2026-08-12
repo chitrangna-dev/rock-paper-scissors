@@ -1,1 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body{
+    font-family: "Poppins", sans-serif;
+    background: #f5fff7;
+    overflow-x: hidden;
+}
+
+/* Header */
+
+h1{
+    background: #000;
+    color: #fff;
+    height: 5rem;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* Choices */
+
+.choices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+}
+
+.choice{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.choice:hover{
+    transform: scale(1.08);
+    background: #d9ffe5;
+}
+
+.choice i{
+    font-size: 5rem;
+    color: #2e8b57;
+}
+
+/* Score Board */
+
+.score-board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-top: 3rem;
+}
+
+.score-board p{
+    text-align: center;
+}
+
+.score-board p:first-child{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.score-board p:last-child{
+    font-size: 1.2rem;
+}
+
+/* Message */
+
+.play{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+#msg{
+    background: #222;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width:992px){
+
+    h1{
+        font-size: 1.7rem;
+    }
+
+    .choice{
+        width: 160px;
+        height: 160px;
+    }
+
+    .choice i{
+        font-size: 4rem;
+    }
+
+    .score-board{
+        gap: 3rem;
+    }
+
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width:768px){
+
+    h1{
+        height: auto;
+        line-height: normal;
+        padding: 15px;
+        font-size: 1.5rem;
+    }
+
+    .choices{
+        gap: 20px;
+        margin-top: 2rem;
+    }
+
+    .choice{
+        width: 130px;
+        height: 130px;
+    }
+
+    .choice i{
+        font-size: 3.5rem;
+    }
+
+    .score-board{
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+
+    .score-board p:first-child{
+        font-size: 2rem;
+    }
+
+    .score-board p:last-child{
+        font-size: 1rem;
+    }
+
+    .play{
+        margin-top: 2rem;
+        padding: 0 15px;
+    }
+
+    #msg{
+        width: 100%;
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+}
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width:480px){
+
+    h1{
+        font-size: 1.2rem;
+        padding: 12px;
+    }
+
+    .choices{
+        gap: 15px;
+    }
+
+    .choice{
+        width: 100px;
+        height: 100px;
+    }
+
+    .choice i{
+        font-size: 2.8rem;
+    }
+
+    .score-board{
+        gap: 1.5rem;
+    }
+
+    .score-board p:first-child{
+        font-size: 1.8rem;
+    }
+
+    .score-board p:last-child{
+        font-size: .9rem;
+    }
+
+    #msg{
+        font-size: .9rem;
+        padding: 10px;
+    }
+
+}
