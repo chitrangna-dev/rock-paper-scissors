@@ -9,9 +9,7 @@ A classic Stone, Paper, Scissors game built with vanilla JavaScript — pick you
 </p>
 
 <p align="center">
-
 🌐 [Live Demo](https://handsfight.netlify.app/)
-
 </p>
 
 ---
